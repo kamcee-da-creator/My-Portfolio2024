@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(./hero.css);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg-color-black: #1a1a1a;
+  --bg-gradient: linear-gradient(45deg, black, #101010);
+  --bg-blue: rgb(0, 0, 165);
+  --white: #ffffff;
+}
+
+
+li,
+a,
+body {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background: transparent;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+header img {
+  height: 20px;
+  cursor: pointer;
+  margin-right: auto;
+}
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+.nav__links li a {
+  transition: all 0.3 ease 0s;
+}
+.nav__links li a:hover {
+  color: var(--bg-blue);
+}
+button {
+  padding: 9px 25px;
+  background-color: var(--bg-blue);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+  margin-left: 20px;
+  color: white;
+  transition: 0.61s ease-in-out;
+}
+button:hover {
+  background-color: rgba(211, 3, 121, 0.8);
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width: 818px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 100dvh;
+    width: 50dvw;
+    background-color: hsl(0, 0%, 0%);
+    top: 0;
+    padding: 3rem 0;
+    right: 0;
+    justify-content: space-between;
+    transform: translateX(200%);
+    transition: 0.71s ease-in;
+    align-items: normal !important;
+  }
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-evenly;
+  }
+
+  .cta button {
+    border-radius: 0;
+    width: 90%;
+    height: 70px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .ri-menu-4-line {
+    position: absolute;
+    top: 0;
+    margin-top: 2rem;
+    font-size: 2rem;
+    right: 0;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 1s ease;
+  }
+ .burger.active .ri-menu-4-line{
+    transform: rotate(60deg);
+  }
+  .burger {
+    display: block !important;
+  }
+  nav.active {
+    transform: translateX(0);
+  }
+}
