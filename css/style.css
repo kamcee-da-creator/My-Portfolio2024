@@ -1,4 +1,5 @@
 @import url(./nav.css);
+@import url(./media.css);
 @import url("https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
@@ -43,7 +44,7 @@ section p{
 }
 .grid{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap !important;
   gap: 10px;
   align-items: center;
   justify-content: center;
@@ -51,5 +52,50 @@ section p{
 }
 .item{
   width: 40%;
+}
 
+/* skills */
+.skills {
+  max-width: 800px;
+  margin: auto;
+}
+.skills h2{
+  margin: 1rem 0 2rem;
+}
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.progress {
+  width: 100%;
+  height: 20px;
+  background: #343434;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  width: 0;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-bar.html {
+  width: 90%; /* HTML skill level */
+}
+
+.progress-bar.css {
+  width: 80%; /* CSS skill level */
+}
+
+.progress-bar.js {
+  width: 70%; /* JavaScript skill level */
 }

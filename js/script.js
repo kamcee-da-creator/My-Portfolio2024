@@ -6,4 +6,7 @@ burger.addEventListener('click', () =>{
     burger.classList.toggle('active')
 })
 
+// skills
+
+
 AOS.init();
