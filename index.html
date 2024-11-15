@@ -8,21 +8,22 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Kamcee</title>
   </head>
   <body>
     <!-- My nav Starts -->
     <header>
-      <img src="./furhaven.png" alt="logo" />
+      <img src=".//assets/KAMCEE-white.png" alt="logo" class="logo" />
       <nav id="nav">
         <ul class="nav__links">
           <li><a href="#">Services</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">About</a></li>
         </ul>
-        <a href="#" class="cta">
+        <!-- <a href="#" class="cta">
           <button>Contact</button>
-        </a>
+        </a> -->
       </nav>
       <div id="burger" class="burger">
         <i class="ri-menu-4-line"></i>
@@ -32,11 +33,34 @@
 
     <!-- hero section -->
     <section class="hero">
-      <h2>Hi i am Kamcee</h2>
+      <h2 data-aos="fade-down" data-aos-anchor-placement="top-bottom">
+        Hi i am Kamcee
+      </h2>
       <br />
-      <span>i am a <span class="bold">web developer</span></span>
+      <span data-aos="fade-up">I am a <span class="container"></span></span>
     </section>
 
+    <!-- About me -->
+    <section class="about">
+      <h2>About Me</h2>
+    <div class="grid">
+      <div class="item">
+        <img src="./assets/png 2.png" class="img" alt="A Photo of me">
+      </div>
+      <div class="item">  <p>
+        I’m Kamcee, a versatile creative professional skilled in graphic design,
+        web development, and social media management. I bring ideas to life with
+        stunning visuals, user-friendly websites, and impactful digital
+        strategies. My passion lies in crafting unique solutions that engage
+        audiences, enhance brands, and deliver measurable results across digital
+        platforms.
+      </p></div>
+    </div>
+    </section>
+    <!-- About me Ends -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/text.js"></script>
   </body>
 </html>

@@ -38,6 +38,10 @@ header img {
   cursor: pointer;
   margin-right: auto;
 }
+.logo{
+  height: 1.2rem;
+ 
+}
 .nav__links {
   list-style: none;
 }
@@ -74,15 +78,16 @@ button:hover {
     flex-direction: column;
     position: absolute;
     height: 100dvh;
-    width: 50dvw;
+    width: 90dvw;
     background-color: hsl(0, 0%, 0%);
     top: 0;
     padding: 3rem 0;
     right: 0;
     justify-content: space-between;
-    transform: translateX(200%);
+    transform: translateY(-100%);
     transition: 0.71s ease-in;
     align-items: normal !important;
+    z-index: 1;
   }
   .nav__links {
     display: flex;
@@ -114,11 +119,16 @@ button:hover {
   }
  .burger.active .ri-menu-4-line{
     transform: rotate(60deg);
+    z-index: 9000000000000000;
+    position: fixed;
   }
   .burger {
     display: block !important;
+    z-index: 9000000000000000;
+
   }
   nav.active {
     transform: translateX(0);
+    position: fixed ;
   }
 }

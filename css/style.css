@@ -1,4 +1,6 @@
 @import url(./nav.css);
+@import url("https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,10 @@
 :root {
   --bg-color-black: #1a1a1a;
   --bg-gradient: linear-gradient(45deg, black, #101010);
- --bg-blue:rgb(0, 0, 165);
-  --white:#ffffff;
+  --bg-blue: rgb(0, 0, 165);
+  --white: #ffffff;
+  --Exo-2: "Exo 2", sans-serif;
+
 }
 
 body {
@@ -16,4 +20,36 @@ body {
   background-size: 500%;
   width: 100dvw !important;
   overflow-x: hidden !important;
+  font-family: var(--Exo-2);
+}
+section{
+  margin-inline: auto;
+ text-align: center;
+  min-width: 320px;
+  padding:2rem 1rem;
+  z-index: -1;
+}
+section p{
+  font-size: .75rem;
+  padding: 2rem 1rem;
+}
+
+/* about */
+.about img{
+  height: 20rem;
+  background: var(--bg-blue);
+  border-radius: 50%;
+  margin: 1rem 0;
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.item{
+  width: 40%;
+
 }
